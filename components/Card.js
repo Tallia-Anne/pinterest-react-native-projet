@@ -17,9 +17,9 @@ const styles = StyleSheet.create({
        borderRadius: 8,
         padding: 16,
         width: 150,
-        height: 220,
+        height: 200,
         alignItems: 'center',
-        marginBottom: 10,  
+        marginBottom: 5,  
 },
 image: {
 width: 150,

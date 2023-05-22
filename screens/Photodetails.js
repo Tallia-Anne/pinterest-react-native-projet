@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {ScrollView, StyleSheet, Text, Image, View} from 'react-native';
 import photos from '../assets/photo';
 import { PhotoContainer } from '../components';
+import { Input } from '@rneui/themed';
 
 const Photodetails = ({route}) => {
      const {photoId} = route.params;
@@ -25,12 +26,19 @@ fetchPhoto();
             <View style={styles.container}>
             <Text style={styles.name} >{photo.name}</Text>
             </View>
-            <View>
+            <View style={styles.containercommentaire}>
             <Text style={styles.commentaire}>Commentaires</Text>
-            <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi assumenda eos ullam veritatis enim.</Text>
+            <Text>Vous aimez cette epingle ? Dites-le à {photo.auther}  </Text>
+             <View style={styles.inputcommentaire}>
+             <Text></Text>
+            </View>   
+                 <Input
+                placeholder='Ajouter un commentaire '
+                style={styles.input}
+                />
             </View>
-            <View>
-            <Text>D'autres Epingles similaires</Text>
+            <View style={styles.epingles}>
+            <Text  style={styles.textepingles}>D'autres Epingles similaires</Text>
             <PhotoContainer/>
             </View>
         </ScrollView>
@@ -39,7 +47,7 @@ fetchPhoto();
 
 const styles = StyleSheet.create({
     container: {
-        padding: 16,
+        padding: 10,
         width: 150,
         height: 50,
         alignItems: 'center',
@@ -51,17 +59,42 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
        
     },
+    containercommentaire:{
+        width: '100%',
+        height: 150,
+        alignItems: 'center',
+        marginBottom: 10,
+},
     commentaire: {
-        fontSize: 14,
-        color: '#999',
-        marginTop: 10,
+        fontSize: 18,
+        color: '#000',
+        paddingBottom: 10,
+        fontWeight: '500'
 
     },
+
+inputcommentaire: {
+width: 100,
+borderColor: '#000',
+},
+input: {
+borderBottom: 'none',
+},
     
    image: {
       width: '100%',
       height: 350,
     },
+epingles: {
+
+ alignItems: 'center',
+},
+textepingles: {
+fontSize: 18,
+        color: '#000',
+        paddingBottom: 10,
+        fontWeight: '500',
+}
 })
 
 export default Photodetails;
