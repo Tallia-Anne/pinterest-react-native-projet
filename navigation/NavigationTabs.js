@@ -39,7 +39,7 @@ const NavigationTabs = () => {
                         tabBarInactiveTintColor: "#888",
                         title: "Rechercher",
                         tabBarIcon:({color, size}) => (
-                            <FoundationIcons name="search" color={color} size={size} />)
+                            <FoundationIcons name="magnifying-glass" color={color} size={size} />)
                     }
                 }
             />

@@ -3,6 +3,7 @@ import {View, StyleSheet, Text, SectionList} from 'react-native';
 const gif = require('../assets/giphy.gif');
 import * as RNElements from '@rneui/base'
 
+
 const AboutScreen = () => {
     const infos = [
         {

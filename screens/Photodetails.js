@@ -4,6 +4,7 @@ import photos from '../assets/photo';
 import { PhotoContainer } from '../components';
 import { Input } from '@rneui/themed';
 
+
 const Photodetails = ({route}) => {
      const {photoId} = route.params;
     const [photo, setPhoto] = useState({});
@@ -22,17 +23,14 @@ fetchPhoto();
 }, [photoId] );
     return (
         <ScrollView >
-             <Image source={photo.image } style={styles.image}  />
+             <Image source={photo.image } style={styles.image}   />
             <View style={styles.container}>
             <Text style={styles.name} >{photo.name}</Text>
             </View>
             <View style={styles.containercommentaire}>
             <Text style={styles.commentaire}>Commentaires</Text>
             <Text>Vous aimez cette epingle ? Dites-le à {photo.auther}  </Text>
-             <View style={styles.inputcommentaire}>
-             <Text></Text>
-            </View>   
-                 <Input
+             <Input
                 placeholder='Ajouter un commentaire '
                 style={styles.input}
                 />
@@ -53,6 +51,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginBottom: 10,
         
+    },
+image: {
+      width: '100%',
+      height: 350,
     },
     name: {
         fontSize: 16,
@@ -77,14 +79,9 @@ inputcommentaire: {
 width: 100,
 borderColor: '#000',
 },
-input: {
-borderBottom: 'none',
-},
+
     
-   image: {
-      width: '100%',
-      height: 350,
-    },
+
 epingles: {
 
  alignItems: 'center',

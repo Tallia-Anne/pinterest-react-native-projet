@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, StyleSheet, Image, ScrollView} from 'react-native';
+import {View, StyleSheet, ImageBackground, ScrollView, Text} from 'react-native';
 import { Input } from '@rneui/themed';
 import photos from '../assets/photo';
 const searchphoto = require('../assets/search.jpg');
@@ -35,10 +35,11 @@ const SearchScreen = () => {
             onChangeText={handleChange}
             value={search}
             />
-            <View style={styles.containerimage}>
-              <Image source={searchphoto} style={styles.image} />
            
-            </View>
+            <ImageBackground source={searchphoto} style={styles.image}>
+            <Text style={styles.texttitle}>Quel envie ?</Text>
+           </ImageBackground>
+          
             <ScrollView style={styles.container}>
             <PhotoContainerSearch photos={filteredPhotos} />
             </ScrollView>
@@ -56,18 +57,20 @@ input: {
 flex: 1,
 paddingBottom: 10,
 },
-containerimage: {
-width: '100%',
-height: 200,
-borderRadius: 22,
-},
+
 image: {
 width: '100%',
 height: '100%',
 resizeMode: 'cover',
-
+borderRadius: 32,
+flex: 1,
+justifyContent: 'center',
+ alignItems: 'center',
+},
+texttitle: {
+fontSize: 26,
+color: 'white',
 }
-
 })
 
 export default SearchScreen;
