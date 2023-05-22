@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@rneui/themed';
 import {View, StyleSheet, ImageBackground, Text, Image } from 'react-native';
 const homeimage = require('../assets/homeimg.jpg');
-const logo = require('../assets/icons8-pinterest-48-removebg-preview.png');
+const logo = require('../assets/174863.png');
 const HomeScreen = ({navigation}) => {
     return (
         <View style={styles.container} >
