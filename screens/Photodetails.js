@@ -29,7 +29,7 @@ fetchPhoto();
             </View>
             <View style={styles.containercommentaire}>
             <Text style={styles.commentaire}>Commentaires</Text>
-            <Text>Vous aimez cette epingle ? Dites-le à {photo.auther}  </Text>
+            <Text>Vous aimez cette epingle ? Dites-le à {photo.author}  </Text>
              <Input
                 placeholder='Ajouter un commentaire '
                 style={styles.input}
