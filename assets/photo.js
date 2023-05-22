@@ -1,19 +1,20 @@
   const photo = [
-        { id: 1, 
-          name: 'Sac Fleur', 
-          image:require('../assets/pinterest1.jpeg'), 
-          description:'Lorem ipsum dolor sit amet. Ut dicta quos quo rerum voluptatum non velit similique ut delectus voluptas sit dolorem autem et accusantium fuga et molestiae sapiente! Et consequatur doloribus.',
-          category: 'mode',
-          author: 'Miclaucy'
-
-           },
-          { id: 2, 
-          name: 'Demons Slayer', 
-          image:require('../assets/demonslayer.jpg'), 
-          description:'Lorem ipsum dolor sit amet. Ut dicta quos quo rerum voluptatum non velit similique ut delectus voluptas sit dolorem autem et accusantium fuga et molestiae sapiente! Et consequatur doloribus.',
-          category: 'manga',
-           author: 'Maugaux'
-           },
+       { 
+    id: 1, 
+    name: 'Sac Fleur', 
+    image: require('../assets/pinterest1.jpeg'), 
+    description: 'Lorem ipsum dolor sit amet. Ut dicta quos quo rerum voluptatum non velit similique ut delectus voluptas sit dolorem autem et accusantium fuga et molestiae sapiente! Et consequatur doloribus.',
+    category: 'mode',
+    author: 'Miclaucy'
+  },
+  { 
+    id: 2, 
+    name: 'Demons Slayer', 
+    image: require('../assets/demonslayer.jpg'), 
+    description: 'Lorem ipsum dolor sit amet. Ut dicta quos quo rerum voluptatum non velit similique ut delectus voluptas sit dolorem autem et accusantium fuga et molestiae sapiente! Et consequatur doloribus.',
+    category: 'manga',
+    author: 'Maugaux'
+  },
         { id: 3, 
           name: 'Drawn fleur ', 
           image:require('../assets/drawn.gif'),
@@ -124,7 +125,21 @@
            description:'Lorem ipsum dolor sit amet. Ut dicta quos quo rerum voluptatum non velit similique ut delectus voluptas sit dolorem autem et accusantium fuga et molestiae sapiente! Et consequatur doloribus.' ,
            category: 'mode',
            auther: 'Joya'
-         },
+         }
+         ,{ id: 21,
+           name: 'La petite sirene',
+           image:require('../assets/mermaid.gif'),
+           description:'Lorem ipsum dolor sit amet. Ut dicta quos quo rerum voluptatum non velit similique ut delectus voluptas sit dolorem autem et accusantium fuga et molestiae sapiente! Et consequatur doloribus.' ,
+            category: 'Disney', 
+            author: 'Tallia'
+          }
+         ,{ id: 22, 
+          name: 'Toture ', 
+          image:require('../assets/toture.jpg'),
+           description:'Lorem ipsum dolor sit amet. Ut dicta quos quo rerum voluptatum non velit similique ut delectus voluptas sit dolorem autem et accusantium fuga et molestiae sapiente! Et consequatur doloribus.' ,
+           category: 'mode',
+           auther: 'Joya'
+         }
     ];
 
 export default photo;
