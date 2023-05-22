@@ -22,7 +22,7 @@ return photo.name(search)
         <View style={styles.container}>
              <Input placeholder='Barre de recherche'  
             style={styles.input} 
-            keyboardType='numeric'
+            keyboardType='text'
             rightIcon={{
             type:'fondation',
             name: 'camera'
